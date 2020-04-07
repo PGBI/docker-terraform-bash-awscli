@@ -5,6 +5,12 @@ to be able to use this image in CI/CD pipelines and deploy with terraform on AWS
 
 ## Usage
 
+Using the latest version of terraform:
 ```
-docker run -i -t pgbi/terraform-bash-awscli:<terraform version> plan main.tf
+docker run -i -t pgbi/terraform-bash-awscli plan main.tf
+```
+
+Using a specific terraform version:
+```
+docker run -i -t pgbi/terraform-bash-awscli:x.y.z plan main.tf
 ```
