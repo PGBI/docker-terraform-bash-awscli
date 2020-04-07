@@ -1,7 +1,3 @@
 #!/bin/sh
 
-printenv
-
-set -x
-
 docker build --build-arg TERRAFORM_VERSION=$DOCKER_TAG -t $IMAGE_NAME .
